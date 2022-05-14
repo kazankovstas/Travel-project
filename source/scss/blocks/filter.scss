@@ -1,0 +1,60 @@
+.fieldset__people {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 40px 20px;
+  border: none;
+  background-color: #fff;
+}
+
+.heading {
+  padding: 40px 0 0;
+  margin: 0;
+  background-color: transparent;
+}
+
+.filter {
+  background-color: #eee;
+  width: 279px;
+  margin: 50px auto 100px;
+}
+
+// .filter__container {
+//   background-color: #fff;
+//   display: flex;
+//   flex-wrap: wrap;
+//   gap: 10px;
+//   padding: 35px;
+// }
+
+.label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 73px;
+  height: 30px;
+  cursor: pointer;
+  border: 1px solid $darkgrey;
+  border-radius: 40px;
+  background-color: white;
+  color: black;
+  &_large {
+    width: 156px;
+  }
+}
+
+.input:checked + .label {
+  background-color: #0499dd;
+  color: white;
+  border: none;
+}
+
+.input:hover:not(:checked) + .label {
+  background-color: $darkgrey;
+  color: black;
+}
+
+// Цвет при нажатии/фокусе ------------------------------------
+.input:focus-visible + .label {
+  outline: 2px solid #ffc700;
+}
