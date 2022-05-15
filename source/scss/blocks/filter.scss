@@ -5,28 +5,30 @@
   align-items: center;
   max-width: 320px;
   margin: 0 auto;
-  padding: 40px 0;
+  padding: 20px 0;
   background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.16);
 }
 
 // FORM
 .form-group {
+  width: 100%;
+}
+
+.form-group__wrapper {
+  border-bottom: 1px solid #eee;
+  margin-bottom: 20px;
 }
 
 .form-group__fieldset {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  padding: 0 20px 40px;
   gap: 10px;
-  padding: 10px 0;
   border: none;
   background-color: #fff;
-}
-
-.form-group__title {
-  padding: 0;
-  margin: 0;
-  font-size: 18px;
 }
 
 .form-group__header {
@@ -34,6 +36,27 @@
   justify-content: space-between;
   align-items: center;
   margin-bottom: 20px;
+  cursor: pointer;
+  padding: 10px 20px;
+  transition: all 600ms cubic-bezier(0.2, 0, 0, 0.8);
+  &:hover {
+    background-color: #eee;
+    color: $blue-basic;
+  }
+}
+
+.form-group__header:hover .form-group__toggle::before {
+  background-color: #0499dd;
+}
+
+.form-group__header:hover .form-group__toggle_hide::after {
+  background-color: #0499dd;
+}
+
+.form-group__title {
+  padding: 0;
+  margin: 0;
+  font-size: 18px;
 }
 
 .form-group__toggle,
@@ -44,7 +67,7 @@
   background-color: transparent;
   cursor: pointer;
   position: relative;
-  transition: 0.2s;
+  // transition: all 600ms cubic-bezier(0.2, 0, 0, 0.8);
   &:hover {
     opacity: 0.7;
   }
@@ -54,7 +77,12 @@
     width: 16px;
     height: 2px;
     left: 0;
-    background-color: #0499dd;
+    background-color: black;
+  }
+  &:focus-visible {
+    background-color: #ffc700;
+    outline: none;
+    border-radius: 2px;
   }
 }
 
@@ -65,19 +93,12 @@
     width: 16px;
     height: 2px;
     left: 0;
-    background-color: #0499dd;
+    background-color: black;
     transform: rotate(90deg);
   }
 }
 
 // Price
-.form-group__price {
-  width: 280px;
-  padding: 20px;
-  border-bottom: 1px solid #eee;
-  margin-bottom: 20px;
-}
-
 .form-group__input-container {
   width: 100%;
   display: flex;
@@ -149,13 +170,6 @@
 }
 
 // People
-.form-group__people {
-  width: 280px;
-  padding: 20px;
-  border-bottom: 1px solid #eee;
-  margin-bottom: 20px;
-}
-
 .label {
   display: flex;
   align-items: center;
@@ -167,6 +181,7 @@
   border-radius: 40px;
   background-color: white;
   color: black;
+  transition: all 600ms cubic-bezier(0.2, 0, 0, 0.8);
   &_large {
     width: 156px;
   }
@@ -186,4 +201,110 @@
 // Цвет при нажатии/фокусе ------------------------------------
 .input:focus-visible + .label {
   outline: 2px solid #ffc700;
+}
+
+// CHECKBOX
+.checkbox__wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.label_checkbox {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  user-select: none;
+  padding: 2px 12px 2px 36px;
+}
+
+.label_checkbox::before,
+.label_checkbox::after {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 0;
+  height: 23px;
+}
+
+.input_checkbox + .label_checkbox::before {
+  width: 23px;
+  background: url(../../img/icon/checkbox-off.svg) no-repeat 0 0;
+}
+
+.input_checkbox:checked + .label_checkbox::after {
+  width: 25px;
+  background: url(../../img/icon/checkbox-on.svg) no-repeat;
+}
+
+.input_checkbox:checked + .label_checkbox::before {
+  display: none;
+}
+
+.input_checkbox:hover + .label_checkbox::before,
+.input_checkbox:checked:hover + .label_checkbox::after {
+  opacity: 0.8;
+}
+
+.input_checkbox:focus-visible + .label_checkbox::before {
+  outline: 3px solid #ffc700;
+  border-radius: 2px;
+}
+
+.input_checkbox:checked:focus-visible + .label_checkbox::after {
+  outline: 3px solid #ffc700;
+  border-radius: 2px;
+}
+
+// RADIO_PLACE
+
+.place__wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.label_place-checkbox {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  user-select: none;
+  padding: 2px 12px 2px 36px;
+  &::before {
+    transition: 0.15s;
+  }
+}
+
+.label_place-checkbox::before,
+.label_place-checkbox::after {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 0;
+}
+
+.input_place-checkbox + .label_place-checkbox::before {
+  width: 24px;
+  height: 24px;
+  border: 4px solid $grey;
+  background-color: $grey;
+  border-radius: 50%;
+}
+
+.input_place-checkbox:checked + .label_place-checkbox::after {
+  top: 8px;
+  left: 8px;
+  width: 8px;
+  height: 8px;
+  background-color: #4d4d4d;
+  border-radius: 50%;
+}
+
+.input_place-checkbox:hover + .label_place-checkbox::before,
+.input_place-checkbox:checked:hover + .label_place-checkbox::after {
+  // opacity: 0.8;
+  border: 2px solid #4d4d4d;
+}
+
+.input_place-checkbox:focus-visible + .label_place-checkbox::before {
+  outline: 3px solid #ffc700;
+  border-radius: 50%;
 }

@@ -19,8 +19,8 @@
       </header>
       <main class="page__main main">
         <section class="filter">
-          <form class="form" action="">
-            <div class="form-group__price">
+          <form class="form-group" action="">
+            <div class="form-group__wrapper">
               <div class="form-group__header">
                 <h3 class="form-group__title" title="Стоимость">Стоимость</h3>
                 <button class="form-group__toggle" type="button"></button>
@@ -47,7 +47,7 @@
                 />
               </fieldset>
             </div>
-            <div class="form-group__people people">
+            <div class="form-group__wrapper">
               <div class="form-group__header">
                 <h3 class="form-group__title" title="Количество человек">
                   Количество человек
@@ -57,9 +57,7 @@
                   type="button"
                 ></button>
               </div>
-              <fieldset
-                class="form-group__fieldset form-group__fieldset_people"
-              >
+              <fieldset class="form-group__fieldset">
                 <div class="form-group__filed field__radio">
                   <input
                     class="visually-hidden input"
@@ -172,6 +170,177 @@
                   <label class="label label_large" for="11"
                     >Больше 10 чел.</label
                   >
+                </div>
+              </fieldset>
+            </div>
+
+            <!-- <div class="form-group__wrapper">
+              <div class="form-group__header">
+                <h3 class="form-group__title" title="Количество человек">
+                  Место
+                </h3>
+                <button
+                  class="form-group__toggle btn-people"
+                  type="button"
+                ></button>
+              </div>
+              <fieldset class="form-group__fieldset checkbox__wrapper">
+                <div class="form-group__filed field__checkbox">
+                  <input
+                    class="visually-hidden input_checkbox"
+                    type="checkbox"
+                    name="place"
+                    id="abkhazia"
+                    value="Abkhazia"
+                    aria-label="Абхазия"
+                  />
+                  <label class="label_checkbox" for="abkhazia">Абхазия</label>
+                </div>
+                <div class="form-group__filed field__checkbox">
+                  <input
+                    class="visually-hidden input_checkbox"
+                    type="checkbox"
+                    name="place"
+                    id="adler"
+                    value="Adler"
+                    aria-label="Адлер"
+                    checked
+                  />
+                  <label class="label_checkbox" for="adler">Адлер</label>
+                </div>
+                <div class="form-group__filed field__checkbox">
+                  <input
+                    class="visually-hidden input_checkbox"
+                    type="checkbox"
+                    name="place"
+                    id="anapa"
+                    value="Anapa"
+                    aria-label="Анапа"
+                  />
+                  <label class="label_checkbox" for="anapa">Анапа</label>
+                </div>
+                <div class="form-group__filed field__checkbox">
+                  <input
+                    class="visually-hidden input_checkbox"
+                    type="checkbox"
+                    name="place"
+                    id="sochi"
+                    value="Sochi"
+                    aria-label="Сочи"
+                  />
+                  <label class="label_checkbox" for="sochi">Сочи</label>
+                </div>
+                <div class="form-group__filed field__checkbox">
+                  <input
+                    class="visually-hidden input_checkbox"
+                    type="checkbox"
+                    name="place"
+                    id="krasnaya"
+                    value="krasnaya"
+                    aria-label="Красная поляна"
+                  />
+                  <label class="label_checkbox" for="krasnaya"
+                    >Красная поляна</label
+                  >
+                </div>
+                <div class="form-group__filed field__checkbox">
+                  <input
+                    class="visually-hidden input_checkbox"
+                    type="checkbox"
+                    name="place"
+                    id="arkhyz"
+                    value="arkhyz"
+                    aria-label="Архыз"
+                  />
+                  <label class="label_checkbox" for="arkhyz">Архыз</label>
+                </div>
+              </fieldset>
+            </div> -->
+
+            <div class="form-group__wrapper">
+              <div class="form-group__header">
+                <h3 class="form-group__title" title="Место">Место</h3>
+                <button
+                  class="form-group__toggle btn-people"
+                  type="button"
+                ></button>
+              </div>
+              <fieldset class="form-group__fieldset place__wrapper">
+                <div class="form-group__filed place__checkbox">
+                  <input
+                    class="visually-hidden input_place-checkbox"
+                    type="radio"
+                    name="place"
+                    id="abkhazia"
+                    value="Abkhazia"
+                    aria-label="Абхазия"
+                    checked
+                  />
+                  <label class="label_place-checkbox" for="abkhazia"
+                    >Абхазия</label
+                  >
+                </div>
+
+                <div class="form-group__filed place__checkbox">
+                  <input
+                    class="visually-hidden input_place-checkbox"
+                    type="radio"
+                    name="place"
+                    id="adler"
+                    value="Adler"
+                    aria-label="Адлер"
+                  />
+                  <label class="label_place-checkbox" for="adler">Адлер</label>
+                </div>
+
+                <div class="form-group__filed place__checkbox">
+                  <input
+                    class="visually-hidden input_place-checkbox"
+                    type="radio"
+                    name="place"
+                    id="anapa"
+                    value="Anapa"
+                    aria-label="Анапа"
+                  />
+                  <label class="label_place-checkbox" for="anapa">Анапа</label>
+                </div>
+
+                <div class="form-group__filed place__checkbox">
+                  <input
+                    class="visually-hidden input_place-checkbox"
+                    type="radio"
+                    name="place"
+                    id="arkhyz"
+                    value="Arkhyz"
+                    aria-label="Архыз"
+                  />
+                  <label class="label_place-checkbox" for="arkhyz">Архыз</label>
+                </div>
+
+                <div class="form-group__filed place__checkbox">
+                  <input
+                    class="visually-hidden input_place-checkbox"
+                    type="radio"
+                    name="place"
+                    id="dombay"
+                    value="Dombay"
+                    aria-label="Домбай"
+                  />
+                  <label class="label_place-checkbox" for="dombay"
+                    >Домбай</label
+                  >
+                </div>
+
+                <div class="form-group__filed place__checkbox">
+                  <input
+                    class="visually-hidden input_place-checkbox"
+                    type="radio"
+                    name="place"
+                    id="sochi"
+                    value="Sochi"
+                    aria-label="Сочи"
+                  />
+                  <label class="label_place-checkbox" for="sochi">Сочи</label>
                 </div>
               </fieldset>
             </div>
