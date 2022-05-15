@@ -3,12 +3,19 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  max-width: 320px;
+  max-width: 280px;
   margin: 0 auto;
   padding: 20px 0;
   background-color: #fff;
   border-radius: 8px;
   box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.16);
+}
+
+.filter__title {
+  padding-left: 20px;
+  margin-bottom: 20px;
+  align-self: baseline;
+  color: $blue-basic;
 }
 
 // FORM
@@ -188,7 +195,7 @@
 }
 
 .input:checked + .label {
-  background-color: #0499dd;
+  background: linear-gradient(92.71deg, #0499dd 0%, #17c1bc 100%);
   color: white;
   border: none;
 }
@@ -307,4 +314,28 @@
 .input_place-checkbox:focus-visible + .label_place-checkbox::before {
   outline: 3px solid #ffc700;
   border-radius: 50%;
+}
+
+// Button
+
+.form-group__button-container {
+  display: flex;
+  justify-content: center;
+  padding: 30px 0;
+}
+
+.form-group__submit {
+  border: none;
+  width: 240px;
+  background: linear-gradient(92.71deg, #0499dd 0%, #17c1bc 100%);
+  color: white;
+  padding: 12px 0;
+  border-radius: 12px;
+  cursor: pointer;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+  font-size: 16px;
+  &:hover {
+    background: linear-gradient(92.71deg, #17c1bc 0%, #0499dd 100%);
+  }
 }

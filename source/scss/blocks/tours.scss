@@ -1,0 +1,125 @@
+.tours {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-width: 320px;
+  padding: 20px 0;
+  background-color: #fff;
+}
+
+.tours__title {
+  color: $blue-basic;
+  align-self: baseline;
+  padding-left: 20px;
+  margin-bottom: 30px;
+}
+
+.tours__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.tours__item {
+  display: flex;
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  width: 280px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.card__image {
+  width: 100%;
+  height: auto;
+  background-color: cyan;
+}
+
+.card__header {
+  padding: 20px 20px 0 20px;
+}
+
+.card__type {
+  color: $accent-color;
+}
+
+.card__title {
+}
+
+.card__price {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  &_age {
+    font-size: 12px;
+  }
+  // &_cost {
+  //   color: $blue-basic;
+  //   font-weight: 700;
+  // }
+}
+
+.card__price_cost {
+  color: $blue-basic;
+  font-weight: 700;
+  position: relative;
+  padding-left: 26px;
+  margin-bottom: 6px;
+  &::before {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: -2px;
+    width: 22px;
+    height: 22px;
+    background-image: url(../../img/sprite/price.svg);
+  }
+}
+
+.card__description {
+  padding: 0 20px;
+  border-left: 3px solid #17c1bc;
+  border-radius: 2px;
+  text-align: justify;
+  text-indent: 30px;
+}
+
+.card__buttons {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 20px 40px 20px;
+}
+
+.card__button {
+  width: 160px;
+  height: 40px;
+  border-radius: 40px;
+  background: linear-gradient(92.71deg, #0499dd 0%, #17c1bc 100%);
+  color: white;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+  &:hover {
+    background: linear-gradient(92.71deg, #17c1bc 0%, #0499dd 100%);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+      rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+  }
+}
+
+.card__button-like {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #ff34c0;
+  border: none;
+}
