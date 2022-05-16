@@ -1,0 +1,20 @@
+.button {
+  border-radius: 40px;
+  background: linear-gradient(92.71deg, #0499dd 0%, #17c1bc 100%);
+  color: white;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s;
+  text-decoration: none;
+  &:hover {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 3px;
+    color: #eee;
+  }
+  &:active {
+    box-shadow: inset 2px 2px 5px rgba(61, 58, 58, 0.5),
+      1px 1px 5px rgba(255, 255, 255, 1);
+    color: #d4d4d4;
+  }
+}

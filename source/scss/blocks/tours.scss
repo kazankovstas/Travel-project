@@ -80,7 +80,7 @@
     top: -2px;
     width: 22px;
     height: 22px;
-    background-image: url(../../img/sprite/price.svg);
+    background-image: url(../img/sprite/price.svg);
   }
 }
 
@@ -99,27 +99,37 @@
 }
 
 .card__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 160px;
-  height: 40px;
-  border-radius: 40px;
-  background: linear-gradient(92.71deg, #0499dd 0%, #17c1bc 100%);
-  color: white;
-  font-weight: 700;
-  letter-spacing: 1.2px;
-  border: none;
-  cursor: pointer;
-  transition: 0.3s;
-  &:hover {
-    background: linear-gradient(92.71deg, #17c1bc 0%, #0499dd 100%);
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
-      rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
-  }
 }
 
 .card__button-like {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  background-color: #ff34c0;
   border: none;
+  border: 2px solid $grey;
+  cursor: pointer;
+  z-index: 2;
+  &:hover {
+    border: 2px solid $blue-basic;
+  }
+  &:active {
+    border: none;
+    outline: 3px solid $blue-basic;
+  }
+  &:active .card__button_icon {
+    transform: scale(1.1);
+  }
+}
+
+.card__button_icon {
+  vertical-align: top;
+  height: 24px;
+  color: #ededed;
+  &_active {
+    color: $blue-basic;
+  }
 }

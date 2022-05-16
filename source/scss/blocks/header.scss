@@ -1,0 +1,44 @@
+.header {
+  min-height: 370px;
+  background-color: rgb(48, 46, 46);
+  background-image: url(../img/tour-bg-mobile.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: 50%;
+  @media (min-width: $tablet-width) {
+    min-height: 510px;
+    background-image: url(../img/tour-bg-tablet.png);
+  }
+  @media (min-width: $desktop-width) {
+    min-height: 289px;
+    background-image: url(../img/tour-bg-desktop.png);
+  }
+}
+
+.header__title {
+  margin-top: 80px;
+  font-family: "Montserrat", sans-serif, "Arial";
+  color: white;
+  text-transform: uppercase;
+  font-size: 36px;
+  line-height: 44px;
+  font-weight: 700;
+  text-align: center;
+  @media (min-width: $tablet-width) {
+    margin-top: 130px;
+    font-size: 48px;
+    line-height: 58.5px;
+  }
+  @media (min-width: $desktop-width) {
+    margin-top: 30px;
+    font-size: 72px;
+    line-height: 88px;
+  }
+}
+
+.header__logo {
+  // cursor: pointer;
+  &:active {
+    transform: scale(1.1);
+  }
+}

@@ -1,0 +1,28 @@
+.main-nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 40px;
+  background-color: rgba($color: #000000, $alpha: 0.3);
+  @media (min-width: $tablet-width) {
+    padding: 20px 80px 10px;
+  }
+  @media (min-width: $desktop-width) {
+    padding: 20px 160px 10px;
+  }
+}
+
+.main-nav__list {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.main-nav__item {
+  font-family: "Montserrat", sans-serif, "Arial";
+  color: white;
+  &:not(:last-child) {
+    margin-right: 20px;
+  }
+}
