@@ -3,16 +3,20 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  min-width: 320px;
+  width: 100%;
   padding: 20px 0;
   background-color: #fff;
+  @media (min-width: $desktop-width) {
+    grid-column: 2/2;
+  }
 }
 
 .tours__title {
+  margin-bottom: 40px;
+  font-size: 24px;
+  line-height: 30px;
   color: $blue-basic;
-  align-self: baseline;
-  padding-left: 20px;
-  margin-bottom: 30px;
+  font-family: "Montserrat", "Arial", sans-serif;
 }
 
 .tours__list {
@@ -26,25 +30,51 @@
 
 .tours__item {
   display: flex;
-  border-radius: 8px;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-  width: 280px;
 }
 
 .card {
+  display: grid;
+  // flex-direction: column;
+  overflow: hidden;
+  width: 280px;
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  @media (min-width: $tablet-width) {
+    width: 610px;
+    height: 444px;
+    grid-template-columns: 238px auto;
+    column-gap: 47px;
+  }
+  @media (min-width: $desktop-width) {
+    width: 779px;
+    height: 303px;
+  }
+}
+
+.card__information {
   display: flex;
   flex-direction: column;
-  overflow: hidden;
+  padding: 20px 20px 40px 20px;
+  @media (min-width: $tablet-width) {
+    padding: 30px 30px 30px 0;
+  }
+  @media (min-width: $desktop-width) {
+    padding: 16px 40px 30px 0;
+  }
 }
 
 .card__image {
   width: 100%;
   height: auto;
+  vertical-align: top;
   background-color: cyan;
+  @media (min-width: $tablet-width) {
+    grid-row: 1/-1;
+  }
 }
 
 .card__header {
-  padding: 20px 20px 0 20px;
+  // padding: 20px 20px 0 20px;
 }
 
 .card__type {
@@ -57,14 +87,13 @@
 .card__price {
   display: flex;
   gap: 20px;
-  padding: 20px;
+  padding: 20px 0;
   &_age {
     font-size: 12px;
   }
-  // &_cost {
-  //   color: $blue-basic;
-  //   font-weight: 700;
-  // }
+  @media (min-width: $desktop-width) {
+    padding: 14px 0;
+  }
 }
 
 .card__price_cost {
@@ -84,8 +113,28 @@
   }
 }
 
+.card__price_time {
+  display: none;
+  @media (min-width: $tablet-width) {
+    display: block;
+    color: $blue-basic;
+    font-weight: 700;
+    position: relative;
+    padding-left: 22px;
+    &::before {
+      position: absolute;
+      content: "";
+      left: 0;
+      top: 0;
+      width: 15px;
+      height: 15px;
+      background-image: url(../img/sprite/time.svg);
+    }
+  }
+}
+
 .card__description {
-  padding: 0 20px;
+  padding: 0 0 0 20px;
   border-left: 3px solid #17c1bc;
   border-radius: 2px;
   text-align: justify;
@@ -95,7 +144,15 @@
 .card__buttons {
   display: flex;
   justify-content: space-between;
-  padding: 20px 20px 40px 20px;
+  padding: 20px 0 0;
+  @media (min-width: $tablet-width) {
+    justify-content: flex-start;
+    gap: 20px;
+    padding: 30px 0 0;
+  }
+  @media (min-width: $desktop-width) {
+    padding: 20px 0 0;
+  }
 }
 
 .card__button {
@@ -118,7 +175,7 @@
   }
   &:active {
     border: none;
-    outline: 3px solid $blue-basic;
+    box-shadow: 0 0 2px 4px $blue-basic;
   }
   &:active .card__button_icon {
     transform: scale(1.1);
