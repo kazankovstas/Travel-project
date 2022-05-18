@@ -180,6 +180,7 @@
   &:active {
     border: none;
     box-shadow: 0 0 2px 4px $blue-basic;
+    -webkit-tap-highlight-color: transparent;
   }
   &:active .card__button_icon {
     transform: scale(1.1);
