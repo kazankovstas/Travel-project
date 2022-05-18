@@ -169,6 +169,7 @@
   border: 2px solid $grey;
   cursor: pointer;
   z-index: 2;
+  -webkit-tap-highlight-color: transparent;
   &:hover {
     border: 2px solid $blue-basic;
   }
