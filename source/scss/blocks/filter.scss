@@ -19,8 +19,8 @@
   font-family: "Montserrat", sans-serif, "Arial";
   align-self: baseline;
   color: $blue-basic;
-  font-size: 14px;
-  line-height: 17px;
+  font-size: 18px;
+  line-height: 22px;
 }
 
 // FORM
@@ -29,12 +29,14 @@
   display: grid;
   @media (min-width: $tablet-width) {
     grid-template-columns: repeat(2, 280px);
-    column-gap: 10px;
     max-width: 100%;
+    column-gap: 20px;
+    padding: 0 15px;
   }
   @media (min-width: $desktop-width) {
     grid-template-columns: 1fr;
     max-width: 280px;
+    padding: 0;
   }
 }
 
@@ -89,7 +91,6 @@
   background-color: transparent;
   cursor: pointer;
   position: relative;
-  // transition: all 600ms cubic-bezier(0.2, 0, 0, 0.8);
   &:hover {
     opacity: 0.7;
   }
@@ -102,9 +103,11 @@
     background-color: black;
   }
   &:focus-visible {
-    background-color: #ffc700;
     outline: none;
     border-radius: 2px;
+    box-shadow: 0 0 2px 4px $blue-basic;
+    outline: none;
+    padding: 4px;
   }
 }
 
@@ -138,7 +141,8 @@
   background-color: white;
   color: black;
   &:focus-visible {
-    outline: 2px solid #ffc700;
+    box-shadow: 0 0 2px 4px $blue-basic;
+    outline: none;
   }
   &::-webkit-outer-spin-button,
   &::-webkit-inner-spin-button {
@@ -162,8 +166,8 @@
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
-    width: 15px;
-    height: 15px;
+    width: 18px;
+    height: 18px;
     border-radius: 50%;
     background-color: $blue-basic;
     cursor: pointer;
@@ -222,7 +226,8 @@
 
 // Цвет при нажатии/фокусе ------------------------------------
 .input:focus-visible + .label {
-  outline: 2px solid #ffc700;
+  box-shadow: 0 0 2px 4px $blue-basic;
+  outline: none;
 }
 
 // CHECKBOX
@@ -268,13 +273,15 @@
 }
 
 .input_checkbox:focus-visible + .label_checkbox::before {
-  outline: 3px solid #ffc700;
   border-radius: 2px;
+  box-shadow: 0 0 2px 4px $blue-basic;
+  outline: none;
 }
 
 .input_checkbox:checked:focus-visible + .label_checkbox::after {
-  outline: 3px solid #ffc700;
   border-radius: 2px;
+  box-shadow: 0 0 2px 4px $blue-basic;
+  outline: none;
 }
 
 // RADIO_PLACE
@@ -322,13 +329,13 @@
 
 .input_place-checkbox:hover + .label_place-checkbox::before,
 .input_place-checkbox:checked:hover + .label_place-checkbox::after {
-  // opacity: 0.8;
   border: 2px solid #4d4d4d;
 }
 
 .input_place-checkbox:focus-visible + .label_place-checkbox::before {
-  outline: 3px solid #ffc700;
   border-radius: 50%;
+  box-shadow: 0 0 2px 4px $blue-basic;
+  outline: none;
 }
 
 // Button
@@ -343,24 +350,4 @@
   width: 240px;
   padding: 12px 0;
   font-size: 16px;
-
-  // border: none;
-  // width: 240px;
-  // background: linear-gradient(92.71deg, #0499dd 0%, #17c1bc 100%);
-  // color: white;
-  // padding: 12px 0;
-  // border-radius: 12px;
-  // cursor: pointer;
-  // font-weight: 700;
-  // letter-spacing: 1.2px;
-  // font-size: 16px;
-  // &:hover {
-  //   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 3px;
-  //   color: #eee;
-  // }
-  // &:active {
-  //   box-shadow: inset 2px 2px 5px rgba(61, 58, 58, 0.5),
-  //     1px 1px 5px rgba(255, 255, 255, 1);
-  //   color: #d4d4d4;
-  // }
 }

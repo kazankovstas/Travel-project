@@ -4,7 +4,6 @@
   justify-content: center;
   align-items: center;
   width: 100%;
-  padding: 20px 0;
   background-color: #fff;
   @media (min-width: $desktop-width) {
     grid-column: 2/2;
@@ -173,6 +172,10 @@
   &:hover {
     border: 2px solid $blue-basic;
   }
+  &:focus-visible {
+    box-shadow: 0 0 2px 4px $blue-basic;
+    outline: none;
+  }
   &:active {
     border: none;
     box-shadow: 0 0 2px 4px $blue-basic;
@@ -185,8 +188,9 @@
 .card__button_icon {
   vertical-align: top;
   height: 24px;
-  color: #ededed;
+  color: #d4d4d4;
   &_active {
     color: $blue-basic;
+    stroke-width: 5px;
   }
 }
