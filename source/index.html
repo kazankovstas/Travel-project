@@ -15,22 +15,35 @@
   <body class="page__body">
     <div class="page__wrapper">
       <header class="page__header header">
-        <nav class="main-nav">
-          <a href="#">
-            <img
-              class="header__logo"
-              src="img/logo-color.png"
-              width="40"
-              height="56"
-              alt="Логотип"
-            />
-          </a>
-          <ul class="main-nav__list">
-            <li class="main-nav__item">Главная</li>
-            <li class="main-nav__item">Экскурсии</li>
-            <li class="main-nav__item">Личный кабинет</li>
-          </ul>
-        </nav>
+        <div class="navigation">
+          <div class="menu">
+            <a href="#">
+              <img
+                class="header__logo"
+                src="img/logo.png"
+                width="40"
+                height="58"
+                alt="Логотип"
+              />
+            </a>
+            <button class="main-nav__toggle">
+              <span class="main-nav__menu"></span>
+            </button>
+          </div>
+          <nav class="main-nav">
+            <ul class="main-nav__list main-nav__list">
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="">Главная</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="">Экскурсии</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="">Личный кабинет</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
         <h2 class="header__title">Наши экскурсии</h2>
       </header>
       <main class="page__main main">
