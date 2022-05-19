@@ -42,3 +42,12 @@
   src: url("../fonts/montserrat/Montserrat-700.woff2") format("woff2"),
     url("../fonts/montserrat/Montserrat-700.woff") format("woff");
 }
+
+@font-face {
+  font-family: "Vacaville";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/vacaville/vacaville.woff2") format("woff2"),
+    url("../fonts/vacaville/vacaville.woff") format("woff");
+}
