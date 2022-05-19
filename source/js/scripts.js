@@ -22,13 +22,13 @@
 }
 
 {
-  const menuBtn = document.querySelector(".main-nav__toggle");
-  const menu = document.querySelector(".main-nav__list");
+  const openMenu = document.querySelector(".main-nav__toggle");
+  const menu = document.querySelector(".main-nav__wrapper");
 
-  menuBtn.addEventListener("click", function () {
-    menuBtn.classList.toggle("main-nav__toggle_active");
-    menuBtn.classList.contains("main-nav__toggle_active")
-      ? menu.classList.add("main-nav__list_show")
-      : menu.classList.remove("main-nav__list_show");
+  openMenu.addEventListener("click", function () {
+    openMenu.classList.toggle("main-nav__toggle_active");
+    openMenu.classList.contains("main-nav__toggle_active")
+      ? menu.classList.add("main-nav__wrapper_opened")
+      : menu.classList.remove("main-nav__wrapper_opened");
   });
 }
