@@ -1,0 +1,204 @@
+.popular {
+  padding: 20px;
+  margin-bottom: 150px;
+}
+
+.popular__title {
+  font-size: 24px;
+  line-height: 1.2;
+  font-weight: 700;
+  color: $blue-basic;
+  margin-bottom: 90px;
+}
+
+.p-card {
+  position: relative;
+  width: 280px;
+  min-height: 540px;
+  margin-right: 20px;
+  padding: 182px 15px 30px;
+  border: 1px solid black;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  background-position-x: center;
+  background-size: cover;
+  background-color: rgb(93, 95, 95);
+  &_sochi {
+    background-image: url(../../img/card-sochi.png);
+  }
+  &_horse {
+    background-image: url(../../img/card-horse.png);
+  }
+  &_dragon {
+    background-image: url(../../img/card-waterfall.png);
+  }
+  &_trinity {
+    background-image: url(../../img/card-trinity.png);
+  }
+  @media (min-width: $tablet-width) {
+    width: 295px;
+    min-height: 490px;
+  }
+  @media (min-width: $desktop-width) {
+    width: 360px;
+    min-height: 500px;
+    margin-right: 20px;
+  }
+}
+
+.popular__wrapper {
+  position: relative;
+}
+
+.popular__list {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.popular__card {
+  position: relative;
+  &::before {
+    background-color: #2a2c2f;
+    opacity: 0.3;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+  }
+}
+
+.p-card__title {
+  margin-bottom: 4px;
+  font-size: 13px;
+  line-height: 1.2;
+  opacity: 0.99;
+}
+.p-card__subtitle {
+  margin-bottom: 10px;
+  font-size: 14px;
+  line-height: 1.2;
+  font-weight: 700;
+  color: $accent-color;
+  opacity: 0.99;
+}
+
+.p-card__inner {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.p-card__duration {
+  margin-left: 20px;
+  position: relative;
+  &::before {
+    position: absolute;
+    content: "";
+    width: 15px;
+    height: 15px;
+    left: -20px;
+    top: 1px;
+    background-image: url(../../img/sprite/time.svg);
+  }
+}
+.p-card__price {
+  margin-left: 27px;
+  position: relative;
+  &::before {
+    position: absolute;
+    content: "";
+    width: 22px;
+    height: 22px;
+    left: -27px;
+    top: -3px;
+    background-image: url(../../img/sprite/price.svg);
+  }
+}
+.p-card__description {
+  margin-bottom: 50px;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 1.2;
+  opacity: 0.99;
+}
+.button {
+}
+.p-card__btn {
+  position: absolute;
+  bottom: 30px;
+}
+
+.popular__arrows {
+  display: flex;
+  margin: 40px 0 0 30px;
+  gap: 10px;
+  min-height: 50px;
+  align-items: center;
+}
+
+.prev,
+.next {
+  display: block;
+  width: 30px;
+  height: 30px;
+  border-radius: 3px;
+  transform: rotate(-40deg);
+  transition: all 0.2s ease-in;
+  cursor: pointer;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  &:hover {
+    border-radius: 0;
+  }
+}
+
+.prev {
+  border-top: 2px solid $grey;
+  border-left: 2px solid $grey;
+  &:hover {
+    border-top: 2px solid $blue-basic;
+    border-left: 2px solid $blue-basic;
+  }
+}
+
+.next {
+  border-bottom: 2px solid $grey;
+  border-right: 2px solid $grey;
+  &:hover {
+    border-bottom: 2px solid $blue-basic;
+    border-right: 2px solid $blue-basic;
+  }
+}
+
+.slick-dots button {
+  font-size: 0;
+  border: none;
+  padding: 0;
+  width: 70px;
+  height: 2px;
+  background-color: $grey;
+  cursor: pointer;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  @media (min-width: $tablet-width) {
+    width: 172px;
+  }
+  @media (min-width: $desktop-width) {
+    width: 340px;
+  }
+}
+
+.slick-dots {
+  display: flex;
+  list-style: none;
+}
+
+.slick-active button {
+  background-color: $blue-basic;
+}
