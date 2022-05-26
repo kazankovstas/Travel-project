@@ -1,49 +1,11 @@
 .popular {
-  padding: 20px;
+  padding-left: 20px;
   margin-bottom: 150px;
-}
-
-.popular__title {
-  font-size: 24px;
-  line-height: 1.2;
-  font-weight: 700;
-  color: $blue-basic;
-  margin-bottom: 90px;
-}
-
-.p-card {
-  position: relative;
-  width: 280px;
-  min-height: 540px;
-  margin-right: 20px;
-  padding: 182px 15px 30px;
-  border: 1px solid black;
-  border: none;
-  border-radius: 10px;
-  color: white;
-  background-position-x: center;
-  background-size: cover;
-  background-color: rgb(93, 95, 95);
-  &_sochi {
-    background-image: url(../../img/card-sochi.png);
-  }
-  &_horse {
-    background-image: url(../../img/card-horse.png);
-  }
-  &_dragon {
-    background-image: url(../../img/card-waterfall.png);
-  }
-  &_trinity {
-    background-image: url(../../img/card-trinity.png);
-  }
   @media (min-width: $tablet-width) {
-    width: 295px;
-    min-height: 490px;
+    margin-left: 80px;
   }
   @media (min-width: $desktop-width) {
-    width: 360px;
-    min-height: 500px;
-    margin-right: 20px;
+    margin-left: 140px;
   }
 }
 
@@ -61,8 +23,29 @@
   overflow: hidden;
 }
 
-.popular__card {
+.popular__title {
+  font-size: 24px;
+  line-height: 1.2;
+  font-weight: 700;
+  color: $blue-basic;
+  margin-bottom: 40px;
+}
+
+// CARD --------------------------------------- CARD
+
+.p-card {
   position: relative;
+  width: 280px;
+  min-height: 540px;
+  margin-right: 20px;
+  padding: 182px 15px 30px;
+  border: 1px solid black;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  background-position-x: center;
+  background-size: cover;
+  background-color: rgb(93, 95, 95);
   &::before {
     background-color: #2a2c2f;
     opacity: 0.3;
@@ -72,6 +55,28 @@
     left: 0;
     bottom: 0;
     right: 0;
+    border-radius: 10px;
+  }
+  &_sochi {
+    background-image: url(../img/card-sochi.png);
+  }
+  &_horse {
+    background-image: url(../img/card-horse.png);
+  }
+  &_dragon {
+    background-image: url(../img/card-waterfall.png);
+  }
+  &_trinity {
+    background-image: url(../img/card-trinity.png);
+  }
+  @media (min-width: $tablet-width) {
+    width: 295px;
+    min-height: 490px;
+  }
+  @media (min-width: $desktop-width) {
+    width: 360px;
+    min-height: 500px;
+    margin-right: 20px;
   }
 }
 
@@ -106,7 +111,7 @@
     height: 15px;
     left: -20px;
     top: 1px;
-    background-image: url(../../img/sprite/time.svg);
+    background-image: url(../img/sprite/time.svg);
   }
 }
 .p-card__price {
@@ -119,7 +124,7 @@
     height: 22px;
     left: -27px;
     top: -3px;
-    background-image: url(../../img/sprite/price.svg);
+    background-image: url(../img/sprite/price.svg);
   }
 }
 .p-card__description {
@@ -129,8 +134,7 @@
   line-height: 1.2;
   opacity: 0.99;
 }
-.button {
-}
+
 .p-card__btn {
   position: absolute;
   bottom: 30px;
@@ -187,10 +191,10 @@
   cursor: pointer;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   @media (min-width: $tablet-width) {
-    width: 172px;
+    width: 167px;
   }
   @media (min-width: $desktop-width) {
-    width: 340px;
+    width: 320px;
   }
 }
 

@@ -39,9 +39,3 @@
     align-items: flex-start;
   }
 }
-
-.main__container {
-  @media (min-width: $tablet-width) {
-    padding: 40px 20px;
-  }
-}
