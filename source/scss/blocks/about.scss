@@ -7,19 +7,19 @@
   border-radius: 0px 10px 10px 0px;
   max-width: 304px;
   min-height: 704px;
-  background-image: url(../../img/about-mobile.jpg);
+  background-image: url(../img/about-mobile.jpg);
   background-size: cover;
   background-position: center;
   @media (min-width: $tablet-width) {
     max-width: 504px;
     min-height: 749px;
     margin-right: 80px;
-    background-image: url(../../img/about-tablet.jpg);
+    background-image: url(../img/about-tablet.jpg);
   }
   @media (min-width: $desktop-width) {
     max-width: 1071px;
     margin-right: 140px;
-    background-image: url(../../img/about-desktop.jpg);
+    background-image: url(../img/about-desktop.jpg);
   }
 }
 
