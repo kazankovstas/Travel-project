@@ -1,11 +1,11 @@
 .popular {
   padding-left: 20px;
-  margin: 150px 0;
+  margin: 80px 0;
   @media (min-width: $tablet-width) {
-    margin-left: 80px;
+    margin: 150px 0 150px 80px;
   }
   @media (min-width: $desktop-width) {
-    margin-left: 140px;
+    margin: 150px 0 150px 140px;
   }
 }
 

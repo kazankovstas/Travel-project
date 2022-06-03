@@ -1,6 +1,6 @@
 {
   $(function () {
-    $(".popular__list").slick({
+    $(".popular__list, .feedback__list").slick({
       dots: true,
       arrows: true,
       infinite: true,

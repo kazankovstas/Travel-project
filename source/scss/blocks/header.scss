@@ -1,7 +1,123 @@
+.main-header {
+  min-height: 778px;
+  padding: 26px;
+  background-color: rgba($color: #242424, $alpha: 0.95);
+  background-image: url(../img/header-mobile.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: $white-basic;
+  @media (min-width: $tablet-width) {
+    min-height: 1024px;
+    padding: 40px 80px 220px;
+    position: initial;
+    align-items: center;
+    background-image: url(../img/header-tablet.png);
+  }
+  @media (min-width: $desktop-width) {
+    min-height: 789px;
+    padding: 40px 140px 70px;
+    background-image: url(../img/header-desktop.png);
+  }
+}
+
+.main-header__heading {
+  display: flex;
+  flex-direction: column;
+  margin: 116px 0 90px 0;
+  @media (min-width: $tablet-width) {
+    margin: 235px 0 90px 0;
+  }
+  @media (min-width: $desktop-width) {
+    margin: 152px 0 60px 0;
+  }
+}
+
+.main-header__title {
+  max-width: 240px;
+  margin-bottom: 12px;
+  font-size: 32px;
+  line-height: 1.2;
+  position: relative;
+  &::before {
+    content: "вместе с";
+    position: absolute;
+    top: 38px;
+    right: -20px;
+    color: $accent-color;
+    font-family: "Cookie", cursive;
+    font-size: 18px;
+    @media (min-width: $tablet-width) {
+      top: 50px;
+      right: -4px;
+      font-size: 24px;
+    }
+    @media (min-width: $desktop-width) {
+      top: 78px;
+      right: -48px;
+      font-size: 32px;
+    }
+  }
+  @media (min-width: $tablet-width) {
+    max-width: 395px;
+    font-size: 48px;
+  }
+  @media (min-width: $desktop-width) {
+    margin-bottom: 20px;
+    max-width: 540px;
+    font-size: 72px;
+  }
+}
+
+.main-header__subtitle {
+  max-width: 420px;
+  color: transparent;
+  -webkit-text-stroke: 1px $white-basic;
+  font-size: 64px;
+  line-height: 90%;
+  text-transform: uppercase;
+  font-weight: 900;
+  @media (min-width: $tablet-width) {
+    font-size: 96px;
+  }
+  @media (min-width: $desktop-width) {
+    max-width: 100%;
+  }
+}
+
+.main-header__btn {
+  width: 230px;
+  height: 50px;
+  margin: 0;
+  border: none;
+  border-radius: 60px;
+  background: linear-gradient(92.71deg, #0499dd 0%, #17c1bc 100%);
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  transition: all 0.2s ease-in;
+  &:hover {
+    color: #ececec;
+  }
+  &:hover svg {
+    transform: translateX(6px) scale(1.2);
+    transition: 0.2s ease-in;
+  }
+  &:focus-visible {
+    outline: none;
+    color: $accent-color;
+    box-shadow: 0 0 2px 4px $white-basic;
+  }
+}
+
 .page-header {
   position: relative;
   padding: 20px;
-  background-color: #242424;
   background-color: rgba($color: #242424, $alpha: 0.95);
   color: #ffffff;
   position: sticky;

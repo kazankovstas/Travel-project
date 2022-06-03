@@ -27,6 +27,7 @@
 .form-group {
   max-width: 280px;
   display: grid;
+  font-family: auto;
   @media (min-width: $tablet-width) {
     grid-template-columns: repeat(2, 280px);
     max-width: 100%;

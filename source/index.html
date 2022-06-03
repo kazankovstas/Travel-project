@@ -8,12 +8,16 @@
     <link rel="icon" href="img/favicon/favicon.svg" type="image/svg+xml" />
     <link rel="apple-touch-icon" href="img/favicon/apple.png" />
     <link rel="manifest" href="manifest.webmanifest" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cookie&family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="css/style.min.css" />
     <title>Travel</title>
   </head>
   <body class="page__body">
     <div class="page__wrapper">
-      <header class="page-header">
+      <header class="main-header">
         <div class="header__heading">
           <a class="page-header__logo" href="index.html">
             <img src="img/logo.png" width="40" height="57" alt="Логотип" />
@@ -43,7 +47,16 @@
             </div>
           </nav>
         </div>
-        <h2 class="header__title">Наши экскурсии</h2>
+        <div class="main-header__heading">
+          <h2 class="main-header__title">Путешествуй</h2>
+          <p class="main-header__subtitle">Pero Travel</p>
+        </div>
+        <a class="main-header__btn" href="tour.html">
+          <span>К экскурсиям</span>
+          <svg width="15" height="8">
+            <use xlink:href="img/sprites.svg#arrow"></use>
+          </svg>
+        </a>
       </header>
       <main class="page__main main">
         <section class="popular">
@@ -285,6 +298,105 @@
             </li>
           </ul>
         </section>
+        <section class="feedback">
+          <div class="feedback__wrapper">
+            <h2 class="feedback__title">Отзывы</h2>
+            <ul class="feedback__list">
+              <li class="feedback__item">
+                <img
+                  class="feedback__image"
+                  src="img/feedback-1.jpg"
+                  width="80"
+                  height="80"
+                  alt="Аватар Ивана Иванова"
+                />
+                <div class="feedback__info">
+                  <h3 class="feedback__name">Иван Иванов, 25 лет</h3>
+                  <p class="feedback__description">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    Duis aute irure dolor in reprehenderit in voluptate velit
+                    esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                    occaecat cupidatat non proident, sunt in culpa qui officia
+                    deserunt mollit anim id est laborum.
+                  </p>
+                </div>
+              </li>
+              <li class="feedback__item">
+                <img
+                  class="feedback__image"
+                  src="img/feedback-2.jpg"
+                  width="80"
+                  height="80"
+                  alt="Аватар Максима Петрова"
+                />
+                <div class="feedback__info">
+                  <h3 class="feedback__name">Максим Петров, 28 лет</h3>
+                  <p class="feedback__description">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    Duis aute irure dolor in reprehenderit in voluptate velit
+                    esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                    occaecat cupidatat non proident, sunt in culpa qui officia
+                    deserunt mollit anim id est laborum.
+                  </p>
+                </div>
+              </li>
+              <li class="feedback__item">
+                <img
+                  class="feedback__image"
+                  src="img/feedback-3.jpg"
+                  width="80"
+                  height="80"
+                  alt="Аватар Николая Шубина"
+                />
+                <div class="feedback__info">
+                  <h3 class="feedback__name">Николай Шубин, 46 лет</h3>
+                  <p class="feedback__description">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    Duis aute irure dolor in reprehenderit in voluptate velit
+                    esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                    occaecat cupidatat non proident, sunt in culpa qui officia
+                    deserunt mollit anim id est laborum.
+                  </p>
+                </div>
+              </li>
+              <li class="feedback__item">
+                <img
+                  class="feedback__image"
+                  src="img/feedback-4.jpg"
+                  width="80"
+                  height="80"
+                  alt="Аватар Владимира Семыкина"
+                />
+                <div class="feedback__info">
+                  <h3 class="feedback__name">Владимир Семыкин, 31 год</h3>
+                  <p class="feedback__description">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    Duis aute irure dolor in reprehenderit in voluptate velit
+                    esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                    occaecat cupidatat non proident, sunt in culpa qui officia
+                    deserunt mollit anim id est laborum.
+                  </p>
+                </div>
+              </li>
+            </ul>
+            <ul class="feedback__arrows">
+              <li class="prev"></li>
+              <li class="next"></li>
+            </ul>
+          </div>
+        </section>
         <section class="contacts">
           <div class="contacts__wrapper">
             <form
@@ -342,33 +454,10 @@
               <a class="footer__link" href="index.html">Главная</a>
             </li>
             <li>
-              <a class="footer__link" href="index.html">Экскурсии</a>
+              <a class="footer__link" href="tour.html">Экскурсии</a>
             </li>
             <li>
-              <a class="footer__link" href="index.html">Личный кабинет</a>
-            </li>
-          </ul>
-          <ul class="footer__social social">
-            <li class="social__item">
-              <a class="social__link" href="">
-                <svg width="32" height="21">
-                  <use xlink:href="img/sprites.svg#vk"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social__item">
-              <a class="social__link" href="">
-                <svg width="28" height="28">
-                  <use xlink:href="img/sprites.svg#inst"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social__item">
-              <a class="social__link" href="">
-                <svg width="15" height="28">
-                  <use xlink:href="img/sprites.svg#facebook"></use>
-                </svg>
-              </a>
+              <a class="footer__link" href="tour.html">Личный кабинет</a>
             </li>
           </ul>
           <ul class="footer__contact contact">
@@ -393,6 +482,29 @@
                 <p class="contact__name">office@perotravel.ru</p>
                 <svg class="contact__icon" width="19" height="19">
                   <use xlink:href="img/sprites.svg#mail"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+          <ul class="footer__social social">
+            <li class="social__item">
+              <a class="social__link" href="">
+                <svg width="32" height="21">
+                  <use xlink:href="img/sprites.svg#vk"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link" href="">
+                <svg width="28" height="28">
+                  <use xlink:href="img/sprites.svg#inst"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link" href="">
+                <svg width="15" height="28">
+                  <use xlink:href="img/sprites.svg#facebook"></use>
                 </svg>
               </a>
             </li>

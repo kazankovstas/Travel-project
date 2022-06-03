@@ -1,0 +1,84 @@
+.feedback {
+  margin-bottom: 80px;
+  @media (min-width: $tablet-width) {
+    margin-bottom: 150px;
+  }
+}
+
+.feedback__wrapper {
+  margin-left: 26px;
+  @media (min-width: $tablet-width) {
+    margin-left: 80px;
+    padding-left: 20px;
+  }
+}
+
+.feedback__title {
+  font-family: "Montserrat", sans-serif, "Arial";
+  color: $blue-basic;
+  margin-bottom: 40px;
+  padding-left: 40px;
+  @media (min-width: $tablet-width) {
+    padding-left: 0;
+  }
+}
+
+.feedback__list {
+  list-style: none;
+}
+
+.feedback__item {
+  margin-right: 30px;
+  width: 260px;
+  padding: 32px 24px;
+  background-color: #ededed;
+  border-radius: 10px;
+  background-image: url(../../img/feedback-quotes.png);
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  @media (min-width: $tablet-width) {
+    width: 505px;
+    display: flex;
+    gap: 20px;
+  }
+  @media (min-width: $desktop-width) {
+    width: 740px;
+    gap: 30px;
+  }
+}
+
+.feedback__image {
+  margin-bottom: 20px;
+  border-radius: 10px;
+  @media (min-width: $tablet-width) {
+    width: 168px;
+    height: 168px;
+  }
+  @media (min-width: $desktop-width) {
+    width: 245px;
+    height: 245px;
+  }
+}
+
+.feedback__info {
+}
+
+.feedback__name {
+  margin-bottom: 10px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.2;
+}
+
+.feedback__description {
+  font-weight: 500;
+  font-size: 13px;
+}
+
+.feedback__arrows {
+  display: flex;
+  margin: 40px 0 0 30px;
+  gap: 10px;
+  min-height: 50px;
+  align-items: center;
+}
