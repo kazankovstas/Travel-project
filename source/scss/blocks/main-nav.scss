@@ -56,7 +56,9 @@
   transition: 0.15s ease-in;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   cursor: pointer;
-  &:hover,
+  &:hover {
+    color: $blue-basic;
+  }
   &:focus-visible {
     background-color: #73b673;
     color: $blue-basic;
@@ -70,7 +72,9 @@
     font-size: 18px;
     line-height: 1.2;
     text-transform: initial;
-    &:hover,
+    &:hover {
+      color: $accent-color;
+    }
     &:focus-visible {
       font-weight: normal;
       background-color: transparent;
@@ -81,6 +85,9 @@
   }
   &_current {
     color: $blue-basic;
+    @media (min-width: $tablet-width) {
+      color: $accent-color;
+    }
   }
 }
 
