@@ -82,3 +82,36 @@
   min-height: 50px;
   align-items: center;
 }
+
+.f-prev,
+.f-next {
+  display: block;
+  width: 30px;
+  height: 30px;
+  border-radius: 3px;
+  transform: rotate(-40deg);
+  transition: all 0.2s ease-in;
+  cursor: pointer;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  &:hover {
+    border-radius: 0;
+  }
+}
+
+.f-prev {
+  border-top: 2px solid $grey;
+  border-left: 2px solid $grey;
+  &:hover {
+    border-top: 2px solid $blue-basic;
+    border-left: 2px solid $blue-basic;
+  }
+}
+
+.f-next {
+  border-bottom: 2px solid $grey;
+  border-right: 2px solid $grey;
+  &:hover {
+    border-bottom: 2px solid $blue-basic;
+    border-right: 2px solid $blue-basic;
+  }
+}

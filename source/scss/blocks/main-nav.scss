@@ -1,3 +1,163 @@
+// INDEX
+.navigation {
+  display: flex;
+  flex-direction: column;
+}
+
+.navigation__wrapper {
+  display: none;
+  transition: 0.6s;
+  &_opened {
+    display: flex;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    padding-top: 100px;
+    background-color: rgba($color: #242424, $alpha: 0.96);
+    transition: 0.6s;
+    animation: fade 0.4s ease-in-out;
+    z-index: 2;
+  }
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+  }
+}
+
+.navigation__list {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+
+.navigation__link {
+  position: relative;
+  display: block;
+  padding: 12px 21px;
+  padding-bottom: 13px;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 0.8px;
+  color: #ffffff;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  background-color: rgba($color: #242424, $alpha: 0.96);
+  border-top: 1px solid #2c2c2c;
+  border-bottom: 1px solid rgba($color: $blue-basic, $alpha: 0.1);
+  transition: 0.15s ease-in;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  cursor: pointer;
+  &:hover,
+  &:focus-visible {
+    background-color: #73b673;
+    color: $blue-basic;
+    font-weight: 500;
+    outline: none;
+  }
+  @media (min-width: $tablet-width) {
+    border: none;
+    background-color: transparent;
+    padding: 6px 10px 6px;
+    font-size: 18px;
+    line-height: 1.2;
+    text-transform: initial;
+    &:hover,
+    &:focus-visible {
+      font-weight: normal;
+      background-color: transparent;
+      outline: none;
+      box-shadow: 0px 4px 3px -2px $accent-color;
+      color: $accent-color;
+    }
+  }
+  &_current {
+    color: $blue-basic;
+  }
+}
+
+// toggle
+.navigation__toggle {
+  position: relative;
+  display: block;
+  border: none;
+  padding: 0;
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  z-index: 5;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.navigation__menu {
+  position: absolute;
+  display: block;
+  width: 40px;
+  height: 5px;
+  border-radius: 20px;
+  background-color: #fff;
+  transition-duration: 0.25s;
+  transition-delay: 0.25s;
+  &::before,
+  &::after {
+    position: absolute;
+    content: "";
+    height: 5px;
+    width: 40px;
+    left: 0;
+    border-radius: 20px;
+    background-color: #fff;
+    transition-duration: 0.25s;
+    transition: transform 0.25s, top 0.25s 0.25s;
+  }
+  &::before {
+    top: -10px;
+  }
+  &::after {
+    top: 10px;
+  }
+}
+
+.navigation__toggle.navigation__toggle_active {
+  .navigation__menu {
+    transition-duration: 0s;
+    transition-delay: 0s;
+    background: transparent;
+    &::before {
+      transition: top 0.25s, transform 0.25s 0.25s;
+      top: 0px;
+      transform: rotateZ(-45deg);
+    }
+    &::after {
+      transition: top 0.4s, transform 0.25s 0.25s;
+      top: 0px;
+      transform: rotateZ(45deg);
+    }
+  }
+}
+
+.navigation__toggle_active {
+  .navigation__menu {
+    &::before,
+    &::after {
+      background-color: $blue-basic;
+    }
+  }
+}
+
+// TOUR
 .main-nav {
   display: flex;
   flex-direction: column;
@@ -66,7 +226,11 @@
     font-size: 18px;
     line-height: 1.2;
     text-transform: initial;
-    &:hover,
+    &:hover {
+      font-weight: normal;
+      background-color: transparent;
+      color: $accent-color;
+    }
     &:focus-visible {
       font-weight: normal;
       background-color: transparent;

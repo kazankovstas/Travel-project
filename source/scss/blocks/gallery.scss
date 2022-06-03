@@ -29,7 +29,7 @@
   height: 100%;
   border-radius: 10px;
   &:hover {
-    transition: all 0.3s ease-in;
+    transition: all 0.3s ease-in-out;
     transform: translateY(-6px) scale(1.03);
     background-color: rgb(66, 66, 66);
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
