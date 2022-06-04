@@ -4,14 +4,14 @@
 
 ##### <a href="https://kazankovstas.github.io/Travel-project/">View Live</a>
 
-**Pero Travel** - интернет-магазин по поиску и бронированию туров по всем туроператорам.
+**Pero Travel** - интернет-магазин по поиску и бронированию туров.
 
     - Адаптивность сетки: мобильная, планшетная и десктопная версии (responsive layout)
     - Используемая методология: БЭМ.
     - Используемый препроцессор: Sass
     - Используемый инструмент автоматизации: Gulp
 
-####First page
+First page
 
 <table>
   <tr>
@@ -32,7 +32,7 @@
   </tr>
 </table>
 
-####Second page
+Second page
 
 <table>
   <tr>

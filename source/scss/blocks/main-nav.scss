@@ -14,7 +14,7 @@
     right: 0;
     bottom: 0;
     top: 0;
-    padding-top: 100px;
+    padding-top: 85px;
     background-color: rgba($color: #242424, $alpha: 0.96);
     transition: 0.6s;
     animation: fade 0.4s ease-in-out;
@@ -75,6 +75,7 @@
     text-transform: initial;
     &:hover {
       color: $accent-color;
+      background-color: transparent;
     }
     &:focus-visible {
       font-weight: normal;
@@ -179,7 +180,7 @@
     position: absolute;
     left: 0;
     right: 0;
-    top: 101px;
+    top: 85px;
     transition: 0.6s;
     animation: bounce 0.4s ease-out;
   }
