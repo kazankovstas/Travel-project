@@ -1,21 +1,17 @@
 .about__wrapper {
   position: relative;
-  margin-right: 40px;
   border-radius: 0px 10px 10px 0px;
-  max-width: 304px;
+  max-width: 70%;
   min-height: 704px;
   background-image: url(../img/about-mobile.jpg);
   background-size: cover;
   background-position: center;
   @media (min-width: $tablet-width) {
-    max-width: 504px;
     min-height: 749px;
-    margin-right: 80px;
     background-image: url(../img/about-tablet.jpg);
   }
   @media (min-width: $desktop-width) {
-    max-width: 1071px;
-    margin-right: 140px;
+    max-width: 80%;
     background-image: url(../img/about-desktop.jpg);
   }
 }
@@ -23,8 +19,8 @@
 .about__info {
   position: absolute;
   top: 40px;
-  right: -30px;
-  width: 70%;
+  right: -70px;
+  width: 90%;
   background: #ededed;
   border-radius: 10px;
   padding: 30px 20px;
@@ -41,10 +37,10 @@
     right: -200px;
   }
   @media (min-width: $desktop-width) {
-    right: -100px;
+    right: -190px;
   }
   @media (min-width: 1400px) {
-    right: -280px;
+    right: -230px;
   }
 }
 
