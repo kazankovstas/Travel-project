@@ -164,6 +164,9 @@
   background-color: $grey;
   cursor: pointer;
   transition: 0.2s;
+  &:focus-visible {
+    background-color: $blue-basic;
+  }
   &::-webkit-slider-thumb {
     -webkit-appearance: none;
     -moz-appearance: none;
