@@ -52,3 +52,16 @@ Second page
     </td>
   </tr>
 </table>
+
+PageSpeed Insights
+
+<table>
+  <tr valign="top">
+    <td>
+        <img src="source/img/readme/desktop-gsi.png">
+    </td>
+    <td>
+        <img src="source/img/readme/mobile-gsi.png">
+    </td>
+  </tr>
+</table>
