@@ -2,7 +2,7 @@
   min-height: 778px;
   padding: 26px;
   background-color: rgba($color: #242424, $alpha: 0.95);
-  background-image: url(../img/header-mobile.png);
+  background-image: url(../img/header-mobile.webp);
   background-repeat: no-repeat;
   background-size: cover;
   color: $white-basic;
@@ -11,12 +11,12 @@
     padding: 40px 80px 220px;
     position: initial;
     align-items: center;
-    background-image: url(../img/header-tablet.png);
+    background-image: url(../img/header-tablet.webp);
   }
   @media (min-width: $desktop-width) {
     min-height: 789px;
     padding: 40px 140px 70px;
-    background-image: url(../img/header-desktop.png);
+    background-image: url(../img/header-desktop.webp);
   }
 }
 
@@ -134,12 +134,12 @@
     background-position-y: 50%;
     position: initial;
     align-items: center;
-    background-image: url(../img/tour-bg-tablet.png);
+    background-image: url(../img/tour-bg-tablet.webp);
   }
   @media (min-width: $desktop-width) {
     min-height: 289px;
     padding: 40px 140px 70px;
-    background-image: url(../img/tour-bg-desktop.png);
+    background-image: url(../img/tour-bg-desktop.webp);
   }
 }
 

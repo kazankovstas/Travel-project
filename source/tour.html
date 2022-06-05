@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="My pet-project" />
     <link rel="icon" href="favicon.ico" />
     <link rel="icon" href="img/favicon/favicon.svg" type="image/svg+xml" />
     <link rel="apple-touch-icon" href="img/favicon/apple.png" />
@@ -17,7 +18,10 @@
       <header class="page-header">
         <div class="header__heading">
           <a class="page-header__logo" href="index.html">
-            <img src="img/logo.png" width="40" height="57" alt="Логотип" />
+            <picture>
+              <source type="image/webp" srcset="img/logo.webp" />
+              <img src="img/logo.png" width="40" height="57" alt="Логотип" />
+            </picture>
           </a>
           <nav class="main-nav main-nav--closed main-nav--nojs">
             <button class="main-nav__toggle" type="button">
@@ -729,12 +733,15 @@
       <footer class="page__footer footer">
         <div class="footer__wrapper">
           <a class="footer__image" href="#">
-            <img
-              src="img/logo-color.png"
-              width="79"
-              height="113"
-              alt="Логотип"
-            />
+            <picture>
+              <source type="image/webp" srcset="img/logo-color.webp" />
+              <img
+                src="img/logo-color.png"
+                width="79"
+                height="113"
+                alt="Логотип"
+              />
+            </picture>
           </a>
           <ul class="footer__links">
             <li>
@@ -775,21 +782,21 @@
           </ul>
           <ul class="footer__social social">
             <li class="social__item">
-              <a class="social__link" href="">
+              <a class="social__link" href="#">
                 <svg width="32" height="21">
                   <use xlink:href="img/sprites.svg#vk"></use>
                 </svg>
               </a>
             </li>
             <li class="social__item">
-              <a class="social__link" href="">
+              <a class="social__link" href="#">
                 <svg width="28" height="28">
                   <use xlink:href="img/sprites.svg#inst"></use>
                 </svg>
               </a>
             </li>
             <li class="social__item">
-              <a class="social__link" href="">
+              <a class="social__link" href="#">
                 <svg width="15" height="28">
                   <use xlink:href="img/sprites.svg#facebook"></use>
                 </svg>

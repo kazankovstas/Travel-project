@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="My pet-project" />
     <link rel="icon" href="favicon.ico" />
     <link rel="icon" href="img/favicon/favicon.svg" type="image/svg+xml" />
     <link rel="apple-touch-icon" href="img/favicon/apple.png" />
@@ -13,6 +14,9 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/style.min.css" />
+    <link rel="preload" href="img/header-desktop.webp" />
+    <link rel="preload" href="img/header-tablet.webp" />
+    <link rel="preload" href="img/header-mobile.webp" />
     <title>Travel</title>
   </head>
   <body class="page__body">
@@ -20,7 +24,10 @@
       <header class="main-header">
         <div class="header__heading">
           <a class="page-header__logo" href="index.html">
-            <img src="img/logo.png" width="40" height="57" alt="Логотип" />
+            <picture>
+              <source type="image/webp" srcset="img/logo.webp" />
+              <img src="img/logo.png" width="40" height="57" alt="Логотип" />
+            </picture>
           </a>
           <nav class="navigation navigation--closed navigation--nojs">
             <button class="navigation__toggle" type="button">
@@ -168,7 +175,18 @@
             <ul class="ex-types__list">
               <li class="ex-types__item">
                 <div class="column-left">
-                  <img src="img/icon/ex-types-1.png" alt="Автобусный тур" />
+                  <picture>
+                    <source
+                      type="image/webp"
+                      srcset="img/icon/ex-types-1.webp"
+                    />
+                    <img
+                      src="img/icon/ex-types-1.png"
+                      width="75"
+                      height="74"
+                      alt="Автобусный тур"
+                    />
+                  </picture>
                 </div>
                 <div class="column-right">
                   <h3 class="ex-types__name">Автобусный тур</h3>
@@ -183,7 +201,18 @@
               </li>
               <li class="ex-types__item">
                 <div class="column-left">
-                  <img src="img/icon/ex-types-2.png" alt="Яхтинг" />
+                  <picture>
+                    <source
+                      type="image/webp"
+                      srcset="img/icon/ex-types-2.webp"
+                    />
+                    <img
+                      src="img/icon/ex-types-2.png"
+                      width="75"
+                      height="74"
+                      alt="Яхтинг"
+                    />
+                  </picture>
                 </div>
                 <div class="column-right">
                   <h3 class="ex-types__name">Яхтинг</h3>
@@ -198,7 +227,18 @@
               </li>
               <li class="ex-types__item">
                 <div class="column-left">
-                  <img src="img/icon/ex-types-3.png" alt="Джиппинг" />
+                  <picture>
+                    <source
+                      type="image/webp"
+                      srcset="img/icon/ex-types-3.webp"
+                    />
+                    <img
+                      src="img/icon/ex-types-3.png"
+                      width="75"
+                      height="74"
+                      alt="Джиппинг"
+                    />
+                  </picture>
                 </div>
                 <div class="column-right">
                   <h3 class="ex-types__name">Джиппинг</h3>
@@ -212,7 +252,18 @@
               </li>
               <li class="ex-types__item">
                 <div class="column-left">
-                  <img src="img/icon/ex-types-4.png" alt="Каньонинг" />
+                  <picture>
+                    <source
+                      type="image/webp"
+                      srcset="img/icon/ex-types-4.webp"
+                    />
+                    <img
+                      src="img/icon/ex-types-4.png"
+                      width="75"
+                      height="66"
+                      alt="Каньонинг"
+                    />
+                  </picture>
                 </div>
                 <div class="column-right">
                   <h3 class="ex-types__name">Каньонинг</h3>
@@ -241,60 +292,84 @@
           <h2 class="gallery__title">Галерея</h2>
           <ul class="gallery__list">
             <li class="gallery__item">
-              <img
-                class="gallery__image"
-                src="img/gallery/pic-1.png"
-                alt="Фотография 1"
-              />
+              <picture>
+                <source type="image/webp" srcset="img/gallery/pic-1.webp" />
+                <img
+                  class="gallery__image"
+                  src="img/gallery/pic-1.png"
+                  alt="Фотография 1"
+                />
+              </picture>
             </li>
             <li class="gallery__item">
-              <img
-                class="gallery__image"
-                src="img/gallery/pic-2.png"
-                alt="Фотография 2"
-              />
+              <picture>
+                <source type="image/webp" srcset="img/gallery/pic-2.webp" />
+                <img
+                  class="gallery__image"
+                  src="img/gallery/pic-2.png"
+                  alt="Фотография 2"
+                />
+              </picture>
             </li>
             <li class="gallery__item">
-              <img
-                class="gallery__image"
-                src="img/gallery/pic-3.png"
-                alt="Фотография 3"
-              />
+              <picture>
+                <source type="image/webp" srcset="img/gallery/pic-3.webp" />
+                <img
+                  class="gallery__image"
+                  src="img/gallery/pic-3.png"
+                  alt="Фотография 3"
+                />
+              </picture>
             </li>
             <li class="gallery__item">
-              <img
-                class="gallery__image"
-                src="img/gallery/pic-4.png"
-                alt="Фотография 4"
-              />
+              <picture>
+                <source type="image/webp" srcset="img/gallery/pic-4.webp" />
+                <img
+                  class="gallery__image"
+                  src="img/gallery/pic-4.png"
+                  alt="Фотография 4"
+                />
+              </picture>
             </li>
             <li class="gallery__item">
-              <img
-                class="gallery__image"
-                src="img/gallery/pic-5.jpg"
-                alt="Фотография 5"
-              />
+              <picture>
+                <source type="image/webp" srcset="img/gallery/pic-5.webp" />
+                <img
+                  class="gallery__image"
+                  src="img/gallery/pic-5.png"
+                  alt="Фотография 5"
+                />
+              </picture>
             </li>
             <li class="gallery__item">
-              <img
-                class="gallery__image"
-                src="img/gallery/pic-6.png"
-                alt="Фотография 6"
-              />
+              <picture>
+                <source type="image/webp" srcset="img/gallery/pic-6.webp" />
+                <img
+                  class="gallery__image"
+                  src="img/gallery/pic-6.png"
+                  alt="Фотография 6"
+                />
+              </picture>
             </li>
             <li class="gallery__item">
-              <img
-                class="gallery__image"
-                src="img/gallery/pic-7.png"
-                alt="Фотография 7"
-              />
+              <picture>
+                <source type="image/webp" srcset="img/gallery/pic-7.webp" />
+                <img
+                  class="gallery__image"
+                  src="img/gallery/pic-7.png"
+                  alt="Фотография 7"
+                />
+              </picture>
             </li>
             <li class="gallery__item">
-              <img
-                class="gallery__image"
-                src="img/gallery/pic-8.png"
-                alt="Фотография 8"
-              />
+              <picture>
+                <source type="image/webp" srcset="img/gallery/pic-8.webp" />
+                <img
+                  class="gallery__image"
+                  src="img/gallery/pic-8.png"
+                  alt="Фотография 8"
+                />
+              </picture>
             </li>
           </ul>
         </section>
@@ -442,12 +517,15 @@
       <footer class="page__footer footer">
         <div class="footer__wrapper">
           <a class="footer__image" href="#">
-            <img
-              src="img/logo-color.png"
-              width="79"
-              height="113"
-              alt="Логотип"
-            />
+            <picture>
+              <source type="image/webp" srcset="img/logo-color.webp" />
+              <img
+                src="img/logo-color.png"
+                width="79"
+                height="113"
+                alt="Логотип"
+              />
+            </picture>
           </a>
           <ul class="footer__links">
             <li>
@@ -488,21 +566,21 @@
           </ul>
           <ul class="footer__social social">
             <li class="social__item">
-              <a class="social__link" href="">
+              <a class="social__link" href="#">
                 <svg width="32" height="21">
                   <use xlink:href="img/sprites.svg#vk"></use>
                 </svg>
               </a>
             </li>
             <li class="social__item">
-              <a class="social__link" href="">
+              <a class="social__link" href="#">
                 <svg width="28" height="28">
                   <use xlink:href="img/sprites.svg#inst"></use>
                 </svg>
               </a>
             </li>
             <li class="social__item">
-              <a class="social__link" href="">
+              <a class="social__link" href="#">
                 <svg width="15" height="28">
                   <use xlink:href="img/sprites.svg#facebook"></use>
                 </svg>

@@ -3,16 +3,16 @@
   border-radius: 0px 10px 10px 0px;
   max-width: 70%;
   min-height: 704px;
-  background-image: url(../img/about-mobile.jpg);
+  background-image: url(../img/about-mobile.webp);
   background-size: cover;
   background-position: center;
   @media (min-width: $tablet-width) {
     min-height: 749px;
-    background-image: url(../img/about-tablet.jpg);
+    background-image: url(../img/about-tablet.webp);
   }
   @media (min-width: $desktop-width) {
     max-width: 80%;
-    background-image: url(../img/about-desktop.jpg);
+    background-image: url(../img/about-desktop.webp);
   }
 }
 
